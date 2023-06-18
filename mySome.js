@@ -5,6 +5,7 @@ let pets = ['cat', 'dog', 'bird', 'fish', 'turtle', 'snake', 'hamster']
 function mySome(arr, cb) {
     // for each element in the array, if the callback function returns true, return true
     for (let i = 0; i < arr.length; i++) {
+        // if the callback function is being called with arr[i] as the argument and returns true
         if (cb(arr[i])) {
             return true;
         }
